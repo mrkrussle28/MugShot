@@ -1,0 +1,303 @@
+body{
+    font-family: Cursive, Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    background-image: url("images/beans.png");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+}
+
+.calendar{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    left: 0%;
+}
+
+header h1{
+    color: white;
+    background-color: rgba(51, 71, 54, 1);
+    margin-top: 25px;
+    margin-left:86px;
+    font-size: 2.0rem;
+    border: 4px rgba(220, 210, 187, 1) solid;
+    border-radius: 200px;
+    display: inline-block;
+    padding: 20px
+}
+
+main{
+    margin: 10px;
+    padding: 15px;
+    background-image: url("images/crumpledPaper.jpg");
+    border: 4px rgba(220, 210, 187, 1) solid;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.events-container h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.events-container section {
+    flex: 1 1 200px;
+    max-width: 300px;
+    min-height: 200px; 
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.live-music{
+    background-color: rgba(78, 36, 9, 1);
+    border: 4px rgba(220, 210, 187, 1) solid;
+    width: 200px;
+    height: 300px;
+}
+
+.live-music ul{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.live-music ul li{
+  background: url("images/coffee-cup.png") no-repeat left center;
+  background-size: 16px;
+  padding-left: 25px;
+  margin: 15px;
+  font-size: 1rem;
+}
+
+.latte-art{
+    background-color: #3f5940;
+    border: 4px rgba(220, 210, 187, 1) solid;
+    height: 300px;
+}
+
+.latte-art ul{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.latte-art ul li{
+  background: url("images/coffeeBean2.png") no-repeat left center;
+  background-size: 16px;
+  padding-left: 25px;
+  margin: 15px;
+  font-size: 1rem;
+}
+
+.book-club{
+    background-color: rgba(78, 36, 9, 1);
+    border: 4px rgba(220, 210, 187, 1) solid;
+    height: 300px;
+}
+
+.book-club ul{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.book-club ul li{
+  background: url("images/coffee-cup.png") no-repeat left center;
+  background-size: 16px;
+  padding-left: 25px;
+  margin: 15px;
+  font-size: 1rem;
+}
+
+.coffee-tasting{
+    background-color: #3f5940;
+    border: 4px rgba(220, 210, 187, 1) solid;
+    height: 300px;
+}
+
+.coffee-tasting ul{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.coffee-tasting ul li{
+  background: url("images/coffeeBean2.png") no-repeat left center;
+  background-size: 16px;
+  padding-left: 25px;
+  margin: 15px;
+  font-size: 1rem;
+}
+
+.open-mic{
+    background-color: rgba(78, 36, 9, 1);
+    border: 4px rgba(220, 210, 187, 1) solid;
+    height: 300px;
+}
+
+.open-mic ul{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.open-mic ul li{
+  background: url("images/coffee-cup.png") no-repeat left center;
+  background-size: 16px;
+  padding-left: 25px;
+  margin: 15px;
+  font-size: 1rem;
+}
+
+.footer {
+    background: #dfd3bd;
+    border-color: #3f5940;
+    border: 9px solid #3f5940;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    gap: 1rem;
+}
+
+.footer-logo {
+    order: 3;
+    width: clamp(60px, 8vw, 100px);
+    height: auto;
+}
+
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.copyright {
+    color: black;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    white-space: nowrap;
+    order: 1;
+}
+
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    order: 2;
+}
+
+.nav-button {
+    background: #3f5940;
+    color: #dfd3bd;
+    padding: 0.75rem 1.25rem;
+    border-radius: 25px;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #dfd3bd;
+}
+
+.nav-button:hover {
+    background: rgb(62, 58, 58);
+    color: rgba(220, 210, 187, 1);
+}
+
+
+.nav-button.active {
+    background: #5b2e12;
+    color: #dfd3bd;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.25);
+}
+
+
+@media (max-width: 767px) {
+    .footer {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .copyright, .navigation, .footer-logo {
+        order: initial;
+    }
+}
+       
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendar {
+        position: static;
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .event-list {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-container section {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
